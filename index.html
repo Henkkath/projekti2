@@ -10,9 +10,9 @@
 <body>
 <div id="demo">
     <h1>Juhon ja Henrin elokuva äppi</h1>
-    <button type="nappi" onclick="loadDoc()">Hae Elokuvia</button>
-    <select id="theater" name="teatterit" class="filter-theater">
-        <option value="1014">Pääkaupunkiseutu</option>
+    <button type="nappi" onclick="loadMovies()">Hae Elokuvia</button>
+    <select id="theater" name="teatterit" onchange="leffa(this.value)" class="filter-theater">
+        <option value="1014" onclick="">Pääkaupunkiseutu</option>
         <option value="1012">Espoo</option>
         <option value="1039">Espoo: OMENA</option>
         <option value="1038">Espoo: SELLO</option>
@@ -34,9 +34,7 @@
         <option value="1022">Turku: KINOPALATSI</option>
     </select>
 
-    <ul id="movies">
 
-    </ul>
 </div>
 
 
